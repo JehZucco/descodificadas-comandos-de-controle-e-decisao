@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Comic Neue", cursive;
+}
+@keyframes rotacao {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+header{
+    padding: 20px;
+    background-color: #FFB6C1;
+    height: fit-content;
+}
+header h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.sumario{
+    width: fit-content;
+    display: block;
+    margin: 30px auto;
+    line-height: 1.5;
+}
+.sumario h2{
+    font-size: 2rem;
+}
+a{
+    display: block;
+    font-size: 1.5rem;
+    color: rgb(2, 125, 181);
+}
+a:hover{
+    color: rgb(98, 173, 207);
+}
+.img{
+    min-height: 100px;
+}
+img{
+    float: right;
+    width: 100px;
+    animation: rotacao 2s linear infinite;
+}
+.flex{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.imgRight{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+ }
+ .imgLeft{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+ }
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+input{
+    background-color: transparent;
+    height: 30px;
+    text-align: center;
+    box-shadow: 2px 2px 5px gray;
+    margin: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+#resultado{
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2rem;
+}
+.marginExtra{
+    margin-top: 50px;
+}
+button{
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+#buttonNovaMedia{
+    display: none;
+}
+#media{
+    background-color:#FFFACD;
+    height: 80vh;
+}
+#maioridade{
+    height: 80vh;
+    background-color: #E0FFFF;
+}
+#mes{
+    height: 80vh;
+    background-color: #D8BFD8;
+}

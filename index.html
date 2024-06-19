@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos de Controle e Decisão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Comandos de Controle e Decisão com JS</h1>
+        <div class="sumario">
+            <h2>Sumário</h2>
+            <a href="#media">Média Simples</a>
+            <a href="#maioridade">Verificação de maioridade com if-else</a>
+            <a href="#mes">Mês correspondente ao número com switch</a>
+        </div>
+        <div class="img">
+            <img src="./8e7cc20b4a6af3737a2f1f9226122de9.png">
+        </div>
+    </header>
+    <main>
+        <section id="media" class="flex">
+            <h1>Média Simples</h1>
+            <p>Insira 3 números e clique em calcular média:</p>
+            <input type="text" id="numeroUm">
+            <input type="text" id="numeroDois">
+            <input type="text" id="numeroTres">
+            <button id="buttonCalcular" onclick="calculaMedia()">calcular</button>
+            <p id="resultado"></p>
+            <button id="buttonNovaMedia" onclick="limparCampos()">nova média</button>
+            <div class="imgRight">
+                <img src="./8e7cc20b4a6af3737a2f1f9226122de9.png">
+            </div>
+        </section>
+        <section id="maioridade" class="flex">
+            <h1>Verificação de maioridade com if-else</h1>
+            <p>Insira a idade que você quer verificar e clique em submeter:</p>
+            <input type="text" id="idade" class="marginExtra">
+            <button onclick="verificaMaioridade()">submeter</button>
+            <div class="imgLeft">
+                <img src="./8e7cc20b4a6af3737a2f1f9226122de9.png">
+            </div>
+        </section>
+        <section id="mes"  class="flex">
+            <h1>Mês correspondente ao número com switch</h1>
+            <p>Insira o número que você deseja saber o mês correspondente e clique em verificar:</p>
+            <input type="text" id="numeroMes" class="marginExtra">
+            <button onclick="mesCorrespondente()">verificar</button>
+            <p id="mesCorrespondente"></p>
+            <div class="imgRight">
+                <img src="./8e7cc20b4a6af3737a2f1f9226122de9.png">
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
